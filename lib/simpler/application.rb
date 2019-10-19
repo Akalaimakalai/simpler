@@ -29,6 +29,7 @@ module Simpler
     def call(env)
       begin
         route = @router.route_for(env)
+        # @router.add_params(route)
         controller = route.controller.new(env)
         action = route.action
       rescue NoMethodError
