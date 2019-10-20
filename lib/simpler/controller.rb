@@ -17,10 +17,11 @@ module Simpler
       @headers = {}
     end
 
-    def make_response(action)
+    def make_response(action, params)
       @request.env['simpler.controller'] = self
       @request.env['simpler.action'] = action
 
+      set_params(params)
       set_default_headers
       send(action)
       set_headers
@@ -33,6 +34,14 @@ module Simpler
 
     def extract_name
       self.class.name.match('(?<name>.+)Controller')[:name].downcase
+    end
+
+    def set_params(params)
+      unless params.empty?
+        params.each do |i|
+          @request.update_param(i[0], i[1])
+        end
+      end
     end
 
     def set_default_headers
