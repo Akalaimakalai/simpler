@@ -22,7 +22,7 @@ module Simpler
       @request.env['simpler.action'] = action
 
       set_params(params)
-      set_default_headers
+      set_default_headers(self.class, action)
       send(action)
       set_headers
       write_response
@@ -44,8 +44,11 @@ module Simpler
       end
     end
 
-    def set_default_headers
+    def set_default_headers(controller, action)
       @response['Content-Type'] = 'text/html'
+      @response['Controller#action'] = "#{controller}##{action}"
+      @response['Params'] = "#{params}"
+      @response['View_path'] = "#{@name}/#{action}.html.erb"
     end
 
     def set_headers
