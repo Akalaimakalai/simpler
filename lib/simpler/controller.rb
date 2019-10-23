@@ -23,6 +23,12 @@ module Simpler
       @request.env['simpler.controller'] = self
       @request.env['simpler.action'] = action
 
+      # unless @request.env['simpler.params'].nil?
+      #   @request.env['simpler.params'].each do |key, value|
+      #     @request.update_param(key, value)
+      #   end
+      # end
+
       @request.params.merge(@request.env['simpler.params'])
       set_default_headers(self.class, action)
       send(action)
@@ -83,7 +89,6 @@ module Simpler
       end
 
       do_options(options)
-
     end
 
     def do_options(options)
