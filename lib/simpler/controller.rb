@@ -15,7 +15,6 @@ module Simpler
       @name = extract_name
       @request = Rack::Request.new(env)
       @response = Rack::Response.new
-      # @params = env['simpler.params']
       @headers = {}
     end
 
@@ -23,13 +22,7 @@ module Simpler
       @request.env['simpler.controller'] = self
       @request.env['simpler.action'] = action
 
-      # unless @request.env['simpler.params'].nil?
-      #   @request.env['simpler.params'].each do |key, value|
-      #     @request.update_param(key, value)
-      #   end
-      # end
-
-      @request.params.merge(@request.env['simpler.params'])
+      @request.params.merge!(@request.env['simpler.params'])
       set_default_headers(self.class, action)
       send(action)
       set_headers
@@ -43,14 +36,6 @@ module Simpler
     def extract_name
       self.class.name.match('(?<name>.+)Controller')[:name].downcase
     end
-
-    # def set_params(params)
-    #   unless params.empty?
-    #     params.each do |key, value|
-    #       @request.update_param(key, value)
-    #     end
-    #   end
-    # end
 
     def set_default_headers(controller, action)
       @response['Content-Type'] = 'text/html'
