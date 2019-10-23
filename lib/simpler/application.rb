@@ -28,17 +28,18 @@ module Simpler
 
     def call(env)
       begin
-        route = @router.route_for(env)
-        controller = route.controller.new(env)
+        @env = env
+        route = @router.route_for(@env)
+        @env['simpler.params'] = route.params
+        controller = route.controller.new(@env)
         action = route.action
-        params = route.params
       rescue NoMethodError
-        controller = Controller.new(env)
+        controller = Controller.new(@env)
         action = 'no_page'
-        params = []
+        params = {}
       end
 
-      make_response(controller, action, params)
+      make_response(controller, action)
     end
 
     private
@@ -57,8 +58,8 @@ module Simpler
       @db = Sequel.connect(database_config)
     end
 
-    def make_response(controller, action, params)
-      controller.make_response(action, params)
+    def make_response(controller, action)
+      controller.make_response(action)
     end
 
   end

@@ -3,7 +3,8 @@ require_relative 'view'
 module Simpler
   class Controller
 
-    attr_reader :name, :request, :response, :headers
+    attr_reader :name, :request, :response
+    attr_accessor :headers
 
     RENDER_OPTIONS = {
       status: "status",
@@ -14,14 +15,15 @@ module Simpler
       @name = extract_name
       @request = Rack::Request.new(env)
       @response = Rack::Response.new
+      # @params = env['simpler.params']
       @headers = {}
     end
 
-    def make_response(action, params)
+    def make_response(action)
       @request.env['simpler.controller'] = self
       @request.env['simpler.action'] = action
 
-      set_params(params)
+      @request.params.merge(@request.env['simpler.params'])
       set_default_headers(self.class, action)
       send(action)
       set_headers
@@ -36,13 +38,13 @@ module Simpler
       self.class.name.match('(?<name>.+)Controller')[:name].downcase
     end
 
-    def set_params(params)
-      unless params.empty?
-        params.each do |i|
-          @request.update_param(i[0], i[1])
-        end
-      end
-    end
+    # def set_params(params)
+    #   unless params.empty?
+    #     params.each do |key, value|
+    #       @request.update_param(key, value)
+    #     end
+    #   end
+    # end
 
     def set_default_headers(controller, action)
       @response['Content-Type'] = 'text/html'
@@ -52,8 +54,8 @@ module Simpler
     end
 
     def set_headers
-      @headers.each do |header|
-        @response[header[0]] = header[1]
+      @headers.each do |header, value|
+        @response[header] = value
       end
     end
 
@@ -80,9 +82,14 @@ module Simpler
         @request.env['simpler.template'] = template
       end
 
-      options.each do |option|
-        if RENDER_OPTIONS.include?(option[0])
-          send(RENDER_OPTIONS[option[0]], option[1])
+      do_options(options)
+
+    end
+
+    def do_options(options)
+      options.each do |option, value|
+        if RENDER_OPTIONS.include?(option)
+          send(RENDER_OPTIONS[option], value)
         end
       end
     end
@@ -91,9 +98,9 @@ module Simpler
       @response.status = number
     end
 
-    def write_headers(hash)
-      hash.each do |i|
-        @headers[i[0]] = i[1]
+    def write_headers(headers)
+      headers.each do |header, value|
+        @headers[header] = value
       end
     end
 

@@ -9,27 +9,40 @@ module Simpler
         @path = path
         @controller = controller
         @action = action
-        @params = []
+        @params = {}
       end
 
       def match?(method, path)
-        original_arr = @path.split('/').drop(1)
-        given_arr = path.split('/').drop(1)
-        
-        @method == method && (path == @path || any_params?(original_arr, given_arr))
+        @route_path_elements = @path.split('/').delete_if{ |i| i == "" }
+        @request_path_elements = path.split('/').delete_if{ |i| i == "" }
+
+        @method == method && (path == @path || full_audit)
       end
 
-      def any_params?(original_arr, given_arr)
-        return false if original_arr.length != given_arr.length
+      def full_audit
+        same_length? && any_params?
+      end
 
-        original_arr.each_with_index do |value, index|
-          if value[0] == ':'
-            @params << [value, given_arr[index]]
-          else
-            return false if value != given_arr[index]
+      def same_length?
+        @route_path_elements.length == @request_path_elements.length
+      end
+
+      def any_params?
+        @route_path_elements.each do |i|
+          if i[0] == ':'
+            form_params
+            return true
           end
         end
+        false
       end
+
+      def form_params
+        @route_path_elements.each_with_index do |value, index|
+          @params[value] = @request_path_elements[index] if value[0] == ':'
+        end
+      end
+
     end
   end
 end

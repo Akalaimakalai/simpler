@@ -35,3 +35,157 @@ I, [2019-10-22T03:33:37.982971 #8992]  INFO -- : Request: GET /tests?lol=kek
 I, [2019-10-22T03:33:38.015992 #8992]  INFO -- : Handler: TestsController#index
 I, [2019-10-22T03:33:38.016479 #8992]  INFO -- : Parameters: {"lol"=>"kek"}
 I, [2019-10-22T03:33:38.016820 #8992]  INFO -- : Response: 200 [text/html testss/index.html.erb
+I, [2019-10-22T23:18:47.671670 #3111]  INFO -- : Request: GET /tests?
+I, [2019-10-22T23:18:47.785100 #3111]  INFO -- : Handler: TestsController#index
+I, [2019-10-22T23:18:47.785254 #3111]  INFO -- : Parameters: {}
+I, [2019-10-22T23:18:47.787098 #3111]  INFO -- : Response: 200 [text/html] tests/index.html.erb
+I, [2019-10-22T23:18:48.004814 #3111]  INFO -- : Request: GET /favicon.ico?
+I, [2019-10-22T23:18:48.024743 #3111]  INFO -- : Handler: Simpler::Controller#no_page
+I, [2019-10-22T23:18:48.024933 #3111]  INFO -- : Parameters: {}
+I, [2019-10-22T23:18:48.025031 #3111]  INFO -- : Response: 404 [text/html] simpler::/no_page.html.erb
+I, [2019-10-22T23:18:54.185754 #3111]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:18:54.188232 #3111]  INFO -- : Handler: Simpler::Controller#no_page
+I, [2019-10-22T23:18:54.188417 #3111]  INFO -- : Parameters: {}
+I, [2019-10-22T23:18:54.188488 #3111]  INFO -- : Response: 404 [text/html] simpler::/no_page.html.erb
+I, [2019-10-22T23:20:29.840507 #3111]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:20:29.841259 #3111]  INFO -- : Handler: Simpler::Controller#no_page
+I, [2019-10-22T23:20:29.841360 #3111]  INFO -- : Parameters: {}
+I, [2019-10-22T23:20:29.841417 #3111]  INFO -- : Response: 404 [text/html] simpler::/no_page.html.erb
+I, [2019-10-22T23:21:12.912720 #3464]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:21:12.925582 #3464]  INFO -- : Handler: TestsController#show
+I, [2019-10-22T23:21:12.925782 #3464]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-22T23:21:12.925848 #3464]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-22T23:21:51.825295 #3529]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:21:51.836881 #3529]  INFO -- : Handler: TestsController#show
+I, [2019-10-22T23:21:51.837072 #3529]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-22T23:21:51.837132 #3529]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-22T23:21:52.872709 #3529]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:21:52.875103 #3529]  INFO -- : Handler: TestsController#show
+I, [2019-10-22T23:21:52.875262 #3529]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-22T23:21:52.875323 #3529]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-22T23:22:34.866439 #3585]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:22:34.876001 #3585]  INFO -- : Handler: TestsController#show
+I, [2019-10-22T23:22:34.876190 #3585]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-22T23:22:34.876260 #3585]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-22T23:22:35.686158 #3585]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:22:35.690945 #3585]  INFO -- : Handler: TestsController#show
+I, [2019-10-22T23:22:35.691142 #3585]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-22T23:22:35.691201 #3585]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-22T23:23:02.231632 #3636]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:23:02.239049 #3636]  INFO -- : Handler: Simpler::Controller#no_page
+I, [2019-10-22T23:23:02.239225 #3636]  INFO -- : Parameters: {}
+I, [2019-10-22T23:23:02.239294 #3636]  INFO -- : Response: 404 [text/html] simpler::/no_page.html.erb
+I, [2019-10-22T23:23:50.097431 #3685]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:24:20.803140 #3760]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:24:20.811781 #3760]  INFO -- : Handler: Simpler::Controller#no_page
+I, [2019-10-22T23:24:20.811956 #3760]  INFO -- : Parameters: {}
+I, [2019-10-22T23:24:20.812016 #3760]  INFO -- : Response: 404 [text/html] simpler::/no_page.html.erb
+I, [2019-10-22T23:25:51.348141 #3931]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:26:51.940124 #3986]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:26:51.949057 #3986]  INFO -- : Handler: TestsController#show
+I, [2019-10-22T23:26:51.949229 #3986]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-22T23:26:51.951139 #3986]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-22T23:27:04.199612 #3986]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:27:04.204254 #3986]  INFO -- : Handler: TestsController#show
+I, [2019-10-22T23:27:04.204401 #3986]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-22T23:27:04.204459 #3986]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-22T23:47:09.042146 #4488]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:47:09.135669 #4488]  INFO -- : Handler: TestsController#new
+I, [2019-10-22T23:47:09.135872 #4488]  INFO -- : Parameters: {}
+I, [2019-10-22T23:47:09.136091 #4488]  INFO -- : Response: 200 [text/html] tests/new.html.erb
+I, [2019-10-22T23:48:57.278770 #4545]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:48:57.289016 #4545]  INFO -- : Handler: TestsController#new
+I, [2019-10-22T23:48:57.289187 #4545]  INFO -- : Parameters: {}
+I, [2019-10-22T23:48:57.289246 #4545]  INFO -- : Response: 200 [text/html] tests/new.html.erb
+I, [2019-10-22T23:48:58.445235 #4545]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:48:58.450047 #4545]  INFO -- : Handler: TestsController#new
+I, [2019-10-22T23:48:58.450225 #4545]  INFO -- : Parameters: {}
+I, [2019-10-22T23:48:58.450285 #4545]  INFO -- : Response: 200 [text/html] tests/new.html.erb
+I, [2019-10-22T23:58:41.964194 #4895]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:58:41.976384 #4895]  INFO -- : Handler: TestsController#show
+I, [2019-10-22T23:58:41.976616 #4895]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-22T23:58:41.976682 #4895]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-22T23:58:45.911874 #4895]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:58:45.914596 #4895]  INFO -- : Handler: TestsController#show
+I, [2019-10-22T23:58:45.914737 #4895]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-22T23:58:45.914833 #4895]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-23T00:11:40.684431 #6136]  INFO -- : Request: GET /tests/1?
+I, [2019-10-23T00:12:33.651843 #6337]  INFO -- : Request: GET /tests/1?
+I, [2019-10-23T00:12:33.777853 #6337]  INFO -- : Handler: TestsController#show
+I, [2019-10-23T00:12:33.779958 #6337]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-23T00:12:33.780279 #6337]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-23T00:12:36.059530 #6337]  INFO -- : Request: GET /tests/1?
+I, [2019-10-23T00:12:36.063644 #6337]  INFO -- : Handler: TestsController#show
+I, [2019-10-23T00:12:36.063810 #6337]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-23T00:12:36.063881 #6337]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-23T00:12:39.343227 #6337]  INFO -- : Request: GET /tests/new?
+I, [2019-10-23T00:12:39.387846 #6337]  INFO -- : Handler: TestsController#new
+I, [2019-10-23T00:12:39.388168 #6337]  INFO -- : Parameters: {}
+I, [2019-10-23T00:12:39.388277 #6337]  INFO -- : Response: 200 [text/html] tests/new.html.erb
+I, [2019-10-23T00:12:44.068599 #6337]  INFO -- : Request: GET /tests?
+I, [2019-10-23T00:12:44.100781 #6337]  INFO -- : Handler: TestsController#index
+I, [2019-10-23T00:12:44.100946 #6337]  INFO -- : Parameters: {}
+I, [2019-10-23T00:12:44.101009 #6337]  INFO -- : Response: 200 [text/html] tests/index.html.erb
+I, [2019-10-23T00:12:47.317156 #6337]  INFO -- : Request: GET /tests/2?
+I, [2019-10-23T00:12:47.318705 #6337]  INFO -- : Handler: TestsController#show
+I, [2019-10-23T00:12:47.318897 #6337]  INFO -- : Parameters: {":id"=>"2"}
+I, [2019-10-23T00:12:47.318962 #6337]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-23T00:19:54.810520 #6891]  INFO -- : Request: GET /tests/2?
+I, [2019-10-23T00:19:54.818843 #6891]  INFO -- : Handler: TestsController#show
+I, [2019-10-23T00:19:54.819016 #6891]  INFO -- : Parameters: {":id"=>"2"}
+I, [2019-10-23T00:19:54.819077 #6891]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-23T00:20:00.303762 #6891]  INFO -- : Request: GET /tests/3?
+I, [2019-10-23T00:20:00.308015 #6891]  INFO -- : Handler: TestsController#show
+I, [2019-10-23T00:20:00.308201 #6891]  INFO -- : Parameters: {":id"=>"3"}
+I, [2019-10-23T00:20:00.308267 #6891]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-23T00:35:06.241729 #7299]  INFO -- : Request: GET /tests/3?
+I, [2019-10-23T00:35:06.268635 #7299]  INFO -- : Handler: TestsController#show
+I, [2019-10-23T00:35:06.268799 #7299]  INFO -- : Parameters: {":id"=>"3"}
+I, [2019-10-23T00:35:06.270581 #7299]  INFO -- : Response: 404 [text/html] tests/show.html.erb
+I, [2019-10-23T00:35:12.022171 #7299]  INFO -- : Request: GET /tests/new?
+I, [2019-10-23T00:35:12.025858 #7299]  INFO -- : Handler: TestsController#new
+I, [2019-10-23T00:35:12.026053 #7299]  INFO -- : Parameters: {}
+I, [2019-10-23T00:35:12.026123 #7299]  INFO -- : Response: 200 [text/html] tests/new.html.erb
+I, [2019-10-23T00:35:19.774992 #7299]  INFO -- : Request: GET /tests?
+I, [2019-10-23T00:35:19.776639 #7299]  INFO -- : Handler: TestsController#index
+I, [2019-10-23T00:35:19.776804 #7299]  INFO -- : Parameters: {}
+I, [2019-10-23T00:35:19.776880 #7299]  INFO -- : Response: 200 [text/html] tests/index.html.erb
+I, [2019-10-23T00:35:23.907165 #7299]  INFO -- : Request: GET /teeds?
+I, [2019-10-23T00:35:23.908351 #7299]  INFO -- : Handler: Simpler::Controller#no_page
+I, [2019-10-23T00:35:23.908549 #7299]  INFO -- : Parameters: {}
+I, [2019-10-23T00:35:23.908646 #7299]  INFO -- : Response: 404 [text/html] simpler::/no_page.html.erb
+I, [2019-10-23T09:32:06.035393 #3632]  INFO -- : Request: GET /tests?
+I, [2019-10-23T09:32:06.128153 #3632]  INFO -- : Handler: TestsController#index
+I, [2019-10-23T09:32:06.128316 #3632]  INFO -- : Parameters: {}
+I, [2019-10-23T09:32:06.128380 #3632]  INFO -- : Response: 200 [text/html] tests/index.html.erb
+I, [2019-10-23T09:43:27.807960 #4355]  INFO -- : Request: GET /tests?
+I, [2019-10-23T09:43:29.214574 #4355]  INFO -- : Request: GET /favicon.ico?
+I, [2019-10-23T09:44:05.402945 #4485]  INFO -- : Request: GET /tests?
+I, [2019-10-23T09:44:05.660495 #4485]  INFO -- : Request: GET /favicon.ico?
+I, [2019-10-23T09:44:32.233414 #4533]  INFO -- : Request: GET /tests?
+I, [2019-10-23T09:44:32.243138 #4533]  INFO -- : Handler: TestsController#index
+I, [2019-10-23T09:44:32.245184 #4533]  INFO -- : Parameters: {}
+I, [2019-10-23T09:44:32.245319 #4533]  INFO -- : Response: 200 [text/html] tests/index.html.erb
+I, [2019-10-23T09:44:32.373907 #4533]  INFO -- : Request: GET /favicon.ico?
+I, [2019-10-23T09:44:42.032699 #4533]  INFO -- : Request: GET /tests/1?
+I, [2019-10-23T09:44:42.046695 #4533]  INFO -- : Handler: TestsController#show
+I, [2019-10-23T09:44:42.046906 #4533]  INFO -- : Parameters: {}
+I, [2019-10-23T09:44:42.046984 #4533]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-23T09:44:43.010766 #4533]  INFO -- : Request: GET /favicon.ico?
+I, [2019-10-23T09:45:56.022499 #4648]  INFO -- : Request: GET /tests/1?
+I, [2019-10-23T09:45:56.263990 #4648]  INFO -- : Request: GET /favicon.ico?
+I, [2019-10-23T09:47:45.591667 #4731]  INFO -- : Request: GET /tests/1?
+I, [2019-10-23T09:47:45.603126 #4731]  INFO -- : Handler: TestsController#show
+I, [2019-10-23T09:47:45.603370 #4731]  INFO -- : Parameters: {}
+I, [2019-10-23T09:47:45.603437 #4731]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-23T09:47:45.682311 #4731]  INFO -- : Request: GET /favicon.ico?
+I, [2019-10-23T09:48:47.068328 #4791]  INFO -- : Request: GET /tests/1?
+I, [2019-10-23T09:48:47.077616 #4791]  INFO -- : Handler: TestsController#show
+I, [2019-10-23T09:48:47.077796 #4791]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-23T09:48:47.077864 #4791]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-23T09:48:47.147900 #4791]  INFO -- : Request: GET /favicon.ico?
+I, [2019-10-23T09:51:35.975847 #4910]  INFO -- : Request: GET /tests/1?
+I, [2019-10-23T09:51:35.985013 #4910]  INFO -- : Handler: TestsController#show
+I, [2019-10-23T09:51:35.985229 #4910]  INFO -- : Parameters: {}
+I, [2019-10-23T09:51:35.985291 #4910]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-23T09:51:36.058289 #4910]  INFO -- : Request: GET /favicon.ico?
