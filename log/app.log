@@ -1,0 +1,191 @@
+I, [2019-10-22T00:57:10.589765 #3507]  INFO -- : {"rack.version"=>[1, 3], "rack.errors"=>#<Rack::Lint::ErrorWrapper:0x0000557fd268d588 @error=#<IO:<STDERR>>>, "rack.multithread"=>true, "rack.multiprocess"=>false, "rack.run_once"=>false, "SCRIPT_NAME"=>"", "QUERY_STRING"=>"", "SERVER_PROTOCOL"=>"HTTP/1.1", "SERVER_SOFTWARE"=>"puma 3.12.1 Llamas in Pajamas", "GATEWAY_INTERFACE"=>"CGI/1.2", "REQUEST_METHOD"=>"GET", "REQUEST_PATH"=>"/tests", "REQUEST_URI"=>"/tests", "HTTP_VERSION"=>"HTTP/1.1", "HTTP_HOST"=>"localhost:9292", "HTTP_USER_AGENT"=>"curl/7.58.0", "HTTP_ACCEPT"=>"*/*", "SERVER_NAME"=>"localhost", "SERVER_PORT"=>"9292", "PATH_INFO"=>"/tests", "REMOTE_ADDR"=>"127.0.0.1", "puma.socket"=>#<TCPSocket:fd 14, AF_INET, 127.0.0.1, 9292>, "rack.hijack?"=>true, "rack.hijack"=>#<Proc:0x0000557fd268d948@/home/artur/.rvm/gems/ruby-2.6.0/gems/rack-2.0.7/lib/rack/lint.rb:525>, "rack.input"=>#<Rack::Lint::InputWrapper:0x0000557fd268d5d8 @input=#<Puma::NullIO:0x0000557fd27ba5a0>>, "rack.url_scheme"=>"http", "rack.after_reply"=>[], "puma.config"=>#<Puma::Configuration:0x0000557fd265b308 @options=#<Puma::UserFileDefaultOptions:0x0000557fd265b150 @user_options={:environment=>"development", :pid=>nil, :Port=>9292, :Host=>"localhost", :AccessLog=>[], :config=>"/home/artur/Thinknetica/Rails/Lessons/Framework/Fork/simpler/config.ru", :log_requests=>false, :binds=>["tcp://localhost:9292"], :app=>#<Rack::ContentLength:0x0000557fd27d8410 @app=#<Rack::Chunked:0x0000557fd27d8460 @app=#<Rack::CommonLogger:0x0000557fd27d84b0 @app=#<Rack::ShowExceptions:0x0000557fd27b79b8 @app=#<Rack::Lint:0x0000557fd27b7a30 @app=#<Rack::TempfileReaper:0x0000557fd27b7a80 @app=#<AppLogger:0x0000557fd1fec008 @logger=#<Logger:0x0000557fd1ffb008 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x0000557fd1ffaf18 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x0000557fd1ffae78 @shift_period_suffix="%Y%m%d", @shift_size=1048576, @shift_age=0, @filename="/home/artur/Thinknetica/Rails/Lessons/Framework/Fork/simpler/log/app.log", @dev=#<File:/home/artur/Thinknetica/Rails/Lessons/Framework/Fork/simpler/log/app.log>, @mon_mutex=#<Thread::Mutex:0x0000557fd1ffabf8>, @mon_mutex_owner_object_id=47003736201020, @mon_owner=nil, @mon_count=0>>, @app=#<Simpler::Application:0x0000557fd26421f0 @router=#<Simpler::Router:0x0000557fd26421c8 @routes=[#<Simpler::Router::Route:0x0000557fd1fe51e0 @method=:get, @path="/tests", @controller=TestsController, @action="index", @params=[]>, #<Simpler::Router::Route:0x0000557fd1fe4650 @method=:get, @path="/tests/new", @controller=TestsController, @action="new", @params=[]>, #<Simpler::Router::Route:0x0000557fd1feff78 @method=:get, @path="/tests/:id", @controller=TestsController, @action="show", @params=[]>, #<Simpler::Router::Route:0x0000557fd1feead8 @method=:post, @path="/tests", @controller=TestsController, @action="create", @params=[]>]>, @db=#<Sequel::SQLite::Database: {"adapter"=>"sqlite", "database"=>#<Pathname:/home/artur/Thinknetica/Rails/Lessons/Framework/Fork/simpler/db/test_guru.sqlite>}>>>>, @content_length=nil>>, @logger=#<IO:<STDERR>>>>>}, @file_options={}, @default_options={:min_threads=>0, :max_threads=>16, :log_requests=>false, :debug=>false, :binds=>["tcp://0.0.0.0:9292"], :workers=>0, :daemon=>false, :mode=>:http, :worker_timeout=>60, :worker_boot_timeout=>60, :worker_shutdown_timeout=>30, :remote_address=>:socket, :tag=>"simpler", :environment=>"development", :rackup=>"config.ru", :logger=>#<IO:<STDOUT>>, :persistent_timeout=>20, :first_data_timeout=>30, :Verbose=>false, :Silent=>false}>, @plugins=#<Puma::PluginLoader:0x0000557fd265b100 @instances=[]>, @user_dsl=#<Puma::DSL:0x0000557fd265afe8 @config=#<Puma::Configuration:0x0000557fd265b308 ...>, @options={:environment=>"development", :pid=>nil, :Port=>9292, :Host=>"localhost", :AccessLog=>[], :config=>"/home/artur/Thinknetica/Rails/Lessons/Framework/Fork/simpler/config.ru", :log_requests=>false, :binds=>["tcp://localhost:9292"], :app=>#<Rack::ContentLength:0x0000557fd27d8410 @app=#<Rack::Chunked:0x0000557fd27d8460 @app=#<Rack::CommonLogger:0x0000557fd27d84b0 @app=#<Rack::ShowExceptions:0x0000557fd27b79b8 @app=#<Rack::Lint:0x0000557fd27b7a30 @app=#<Rack::TempfileReaper:0x0000557fd27b7a80 @app=#<AppLogger:0x0000557fd1fec008 @logger=#<Logger:0x0000557fd1ffb008 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x0000557fd1ffaf18 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x0000557fd1ffae78 @shift_period_suffix="%Y%m%d", @shift_size=1048576, @shift_age=0, @filename="/home/artur/Thinknetica/Rails/Lessons/Framework/Fork/simpler/log/app.log", @dev=#<File:/home/artur/Thinknetica/Rails/Lessons/Framework/Fork/simpler/log/app.log>, @mon_mutex=#<Thread::Mutex:0x0000557fd1ffabf8>, @mon_mutex_owner_object_id=47003736201020, @mon_owner=nil, @mon_count=0>>, @app=#<Simpler::Application:0x0000557fd26421f0 @router=#<Simpler::Router:0x0000557fd26421c8 @routes=[#<Simpler::Router::Route:0x0000557fd1fe51e0 @method=:get, @path="/tests", @controller=TestsController, @action="index", @params=[]>, #<Simpler::Router::Route:0x0000557fd1fe4650 @method=:get, @path="/tests/new", @controller=TestsController, @action="new", @params=[]>, #<Simpler::Router::Route:0x0000557fd1feff78 @method=:get, @path="/tests/:id", @controller=TestsController, @action="show", @params=[]>, #<Simpler::Router::Route:0x0000557fd1feead8 @method=:post, @path="/tests", @controller=TestsController, @action="create", @params=[]>]>, @db=#<Sequel::SQLite::Database: {"adapter"=>"sqlite", "database"=>#<Pathname:/home/artur/Thinknetica/Rails/Lessons/Framework/Fork/simpler/db/test_guru.sqlite>}>>>>, @content_length=nil>>, @logger=#<IO:<STDERR>>>>>}, @plugins=[]>, @file_dsl=#<Puma::DSL:0x0000557fd265aed0 @config=#<Puma::Configuration:0x0000557fd265b308 ...>, @options={}, @plugins=[]>, @default_dsl=#<Puma::DSL:0x0000557fd265ae58 @config=#<Puma::Configuration:0x0000557fd265b308 ...>, @options={:min_threads=>0, :max_threads=>16, :log_requests=>false, :debug=>false, :binds=>["tcp://0.0.0.0:9292"], :workers=>0, :daemon=>false, :mode=>:http, :worker_timeout=>60, :worker_boot_timeout=>60, :worker_shutdown_timeout=>30, :remote_address=>:socket, :tag=>"simpler", :environment=>"development", :rackup=>"config.ru", :logger=>#<IO:<STDOUT>>, :persistent_timeout=>20, :first_data_timeout=>30, :Verbose=>false, :Silent=>false}, @plugins=[]>>, "rack.tempfiles"=>[]}
+I, [2019-10-22T01:02:25.820331 #3650]  INFO -- : или по одной
+I, [2019-10-22T01:06:27.399944 #3900]  INFO -- : Request: GET /tests
+I, [2019-10-22T01:07:03.578311 #3900]  INFO -- : Request: GET /tests
+I, [2019-10-22T01:07:53.026974 #4025]  INFO -- : Request: GET /tests?lol=kek
+I, [2019-10-22T01:09:45.692444 #4118]  INFO -- : Request: GET /tests?lol=kek
+I, [2019-10-22T01:09:45.702342 #4118]  INFO -- : [200, {"Content-Type"=>"text/html", "Content-Length"=>"220"}, #<Rack::BodyProxy:0x000055aed02479b0 @body=#<Rack::Response:0x000055aed025f3f8 @status=200, @header={"Content-Type"=>"text/html", "Content-Length"=>"220"}, @writer=#<Proc:0x000055aed025f1a0@/home/artur/.rvm/gems/ruby-2.6.0/gems/rack-2.0.7/lib/rack/response.rb:32 (lambda)>, @block=nil, @length=220, @body=["<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <title>Index | Simpler application</title>\n  </head>\n  <body>\n    <h1>Simpler framework at work!</h1>\n\n    <p>2019-10-22 01:09:45 +0300</p>\n  </body>\n</html>"]>, @block=#<Proc:0x000055aed02478c0@/home/artur/.rvm/gems/ruby-2.6.0/gems/rack-2.0.7/lib/rack/response.rb:69>, @closed=false>]
+I, [2019-10-22T02:37:44.727417 #6722]  INFO -- : Request: GET /tests?lol=kek
+I, [2019-10-22T02:37:44.740102 #6722]  INFO -- : Handler: tests#index
+I, [2019-10-22T02:38:50.867714 #6802]  INFO -- : Request: GET /tests?lol=kek
+I, [2019-10-22T02:40:14.238708 #6932]  INFO -- : Request: GET /tests?lol=kek
+I, [2019-10-22T02:40:14.248579 #6932]  INFO -- : Handler: tests#index
+I, [2019-10-22T02:42:11.809529 #7052]  INFO -- : Request: GET /tests?lol=kek
+I, [2019-10-22T02:42:11.819928 #7052]  INFO -- : Handler: tests#index
+I, [2019-10-22T02:54:11.801987 #7446]  INFO -- : Request: GET /tests?lol=kek
+I, [2019-10-22T02:55:11.597563 #7558]  INFO -- : Request: GET /tests?lol=kek
+I, [2019-10-22T02:55:11.608557 #7558]  INFO -- : Handler: tests#index
+I, [2019-10-22T02:56:50.737135 #7662]  INFO -- : Request: GET /tests?lol=kek
+I, [2019-10-22T02:56:50.747115 #7662]  INFO -- : Handler: TestsController#index
+I, [2019-10-22T02:57:22.042297 #7734]  INFO -- : Request: GET /tests?lol=kek
+I, [2019-10-22T02:57:22.059389 #7734]  INFO -- : Handler: TestsController#index
+I, [2019-10-22T02:57:55.036319 #7809]  INFO -- : Request: GET /tests?lol=kek
+I, [2019-10-22T03:07:04.392137 #8074]  INFO -- : Request: GET /tests?lol=kek
+I, [2019-10-22T03:07:04.404042 #8074]  INFO -- : {"Content-Type"=>"text/html", "Controller#action"=>"TestsController#index", "Content-Length"=>"220"}
+I, [2019-10-22T03:08:10.919676 #8161]  INFO -- : Request: GET /tests?lol=kek
+I, [2019-10-22T03:08:10.930925 #8161]  INFO -- : Handler: TestsController#index
+I, [2019-10-22T03:11:44.625065 #8366]  INFO -- : Request: GET /tests?lol=kek
+I, [2019-10-22T03:11:44.635240 #8366]  INFO -- : Handler: TestsController#index
+I, [2019-10-22T03:11:44.635418 #8366]  INFO -- : #<Rack::BodyProxy:0x000056150ed90e08 @body=#<Rack::Response:0x000056150ed2c2f0 @status=200, @header={"Content-Type"=>"text/html", "Controller#action"=>"TestsController#index", "Content-Length"=>"220"}, @writer=#<Proc:0x000056150ed2c110@/home/artur/.rvm/gems/ruby-2.6.0/gems/rack-2.0.7/lib/rack/response.rb:32 (lambda)>, @block=nil, @length=220, @body=["<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <title>Index | Simpler application</title>\n  </head>\n  <body>\n    <h1>Simpler framework at work!</h1>\n\n    <p>2019-10-22 03:11:44 +0300</p>\n  </body>\n</html>"]>, @block=#<Proc:0x000056150ed90db8@/home/artur/.rvm/gems/ruby-2.6.0/gems/rack-2.0.7/lib/rack/response.rb:69>, @closed=false>
+I, [2019-10-22T03:33:00.912273 #8915]  INFO -- : Request: GET /tests?lol=kek
+I, [2019-10-22T03:33:00.945475 #8915]  INFO -- : Handler: TestsController#index
+I, [2019-10-22T03:33:00.946001 #8915]  INFO -- : Parameters: {"lol"=>"kek"}
+I, [2019-10-22T03:33:00.946399 #8915]  INFO -- : Response: 200 [text/html testss/index.html.erb
+I, [2019-10-22T03:33:37.982971 #8992]  INFO -- : Request: GET /tests?lol=kek
+I, [2019-10-22T03:33:38.015992 #8992]  INFO -- : Handler: TestsController#index
+I, [2019-10-22T03:33:38.016479 #8992]  INFO -- : Parameters: {"lol"=>"kek"}
+I, [2019-10-22T03:33:38.016820 #8992]  INFO -- : Response: 200 [text/html testss/index.html.erb
+I, [2019-10-22T23:18:47.671670 #3111]  INFO -- : Request: GET /tests?
+I, [2019-10-22T23:18:47.785100 #3111]  INFO -- : Handler: TestsController#index
+I, [2019-10-22T23:18:47.785254 #3111]  INFO -- : Parameters: {}
+I, [2019-10-22T23:18:47.787098 #3111]  INFO -- : Response: 200 [text/html] tests/index.html.erb
+I, [2019-10-22T23:18:48.004814 #3111]  INFO -- : Request: GET /favicon.ico?
+I, [2019-10-22T23:18:48.024743 #3111]  INFO -- : Handler: Simpler::Controller#no_page
+I, [2019-10-22T23:18:48.024933 #3111]  INFO -- : Parameters: {}
+I, [2019-10-22T23:18:48.025031 #3111]  INFO -- : Response: 404 [text/html] simpler::/no_page.html.erb
+I, [2019-10-22T23:18:54.185754 #3111]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:18:54.188232 #3111]  INFO -- : Handler: Simpler::Controller#no_page
+I, [2019-10-22T23:18:54.188417 #3111]  INFO -- : Parameters: {}
+I, [2019-10-22T23:18:54.188488 #3111]  INFO -- : Response: 404 [text/html] simpler::/no_page.html.erb
+I, [2019-10-22T23:20:29.840507 #3111]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:20:29.841259 #3111]  INFO -- : Handler: Simpler::Controller#no_page
+I, [2019-10-22T23:20:29.841360 #3111]  INFO -- : Parameters: {}
+I, [2019-10-22T23:20:29.841417 #3111]  INFO -- : Response: 404 [text/html] simpler::/no_page.html.erb
+I, [2019-10-22T23:21:12.912720 #3464]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:21:12.925582 #3464]  INFO -- : Handler: TestsController#show
+I, [2019-10-22T23:21:12.925782 #3464]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-22T23:21:12.925848 #3464]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-22T23:21:51.825295 #3529]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:21:51.836881 #3529]  INFO -- : Handler: TestsController#show
+I, [2019-10-22T23:21:51.837072 #3529]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-22T23:21:51.837132 #3529]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-22T23:21:52.872709 #3529]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:21:52.875103 #3529]  INFO -- : Handler: TestsController#show
+I, [2019-10-22T23:21:52.875262 #3529]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-22T23:21:52.875323 #3529]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-22T23:22:34.866439 #3585]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:22:34.876001 #3585]  INFO -- : Handler: TestsController#show
+I, [2019-10-22T23:22:34.876190 #3585]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-22T23:22:34.876260 #3585]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-22T23:22:35.686158 #3585]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:22:35.690945 #3585]  INFO -- : Handler: TestsController#show
+I, [2019-10-22T23:22:35.691142 #3585]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-22T23:22:35.691201 #3585]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-22T23:23:02.231632 #3636]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:23:02.239049 #3636]  INFO -- : Handler: Simpler::Controller#no_page
+I, [2019-10-22T23:23:02.239225 #3636]  INFO -- : Parameters: {}
+I, [2019-10-22T23:23:02.239294 #3636]  INFO -- : Response: 404 [text/html] simpler::/no_page.html.erb
+I, [2019-10-22T23:23:50.097431 #3685]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:24:20.803140 #3760]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:24:20.811781 #3760]  INFO -- : Handler: Simpler::Controller#no_page
+I, [2019-10-22T23:24:20.811956 #3760]  INFO -- : Parameters: {}
+I, [2019-10-22T23:24:20.812016 #3760]  INFO -- : Response: 404 [text/html] simpler::/no_page.html.erb
+I, [2019-10-22T23:25:51.348141 #3931]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:26:51.940124 #3986]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:26:51.949057 #3986]  INFO -- : Handler: TestsController#show
+I, [2019-10-22T23:26:51.949229 #3986]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-22T23:26:51.951139 #3986]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-22T23:27:04.199612 #3986]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:27:04.204254 #3986]  INFO -- : Handler: TestsController#show
+I, [2019-10-22T23:27:04.204401 #3986]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-22T23:27:04.204459 #3986]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-22T23:47:09.042146 #4488]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:47:09.135669 #4488]  INFO -- : Handler: TestsController#new
+I, [2019-10-22T23:47:09.135872 #4488]  INFO -- : Parameters: {}
+I, [2019-10-22T23:47:09.136091 #4488]  INFO -- : Response: 200 [text/html] tests/new.html.erb
+I, [2019-10-22T23:48:57.278770 #4545]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:48:57.289016 #4545]  INFO -- : Handler: TestsController#new
+I, [2019-10-22T23:48:57.289187 #4545]  INFO -- : Parameters: {}
+I, [2019-10-22T23:48:57.289246 #4545]  INFO -- : Response: 200 [text/html] tests/new.html.erb
+I, [2019-10-22T23:48:58.445235 #4545]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:48:58.450047 #4545]  INFO -- : Handler: TestsController#new
+I, [2019-10-22T23:48:58.450225 #4545]  INFO -- : Parameters: {}
+I, [2019-10-22T23:48:58.450285 #4545]  INFO -- : Response: 200 [text/html] tests/new.html.erb
+I, [2019-10-22T23:58:41.964194 #4895]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:58:41.976384 #4895]  INFO -- : Handler: TestsController#show
+I, [2019-10-22T23:58:41.976616 #4895]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-22T23:58:41.976682 #4895]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-22T23:58:45.911874 #4895]  INFO -- : Request: GET /tests/1?
+I, [2019-10-22T23:58:45.914596 #4895]  INFO -- : Handler: TestsController#show
+I, [2019-10-22T23:58:45.914737 #4895]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-22T23:58:45.914833 #4895]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-23T00:11:40.684431 #6136]  INFO -- : Request: GET /tests/1?
+I, [2019-10-23T00:12:33.651843 #6337]  INFO -- : Request: GET /tests/1?
+I, [2019-10-23T00:12:33.777853 #6337]  INFO -- : Handler: TestsController#show
+I, [2019-10-23T00:12:33.779958 #6337]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-23T00:12:33.780279 #6337]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-23T00:12:36.059530 #6337]  INFO -- : Request: GET /tests/1?
+I, [2019-10-23T00:12:36.063644 #6337]  INFO -- : Handler: TestsController#show
+I, [2019-10-23T00:12:36.063810 #6337]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-23T00:12:36.063881 #6337]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-23T00:12:39.343227 #6337]  INFO -- : Request: GET /tests/new?
+I, [2019-10-23T00:12:39.387846 #6337]  INFO -- : Handler: TestsController#new
+I, [2019-10-23T00:12:39.388168 #6337]  INFO -- : Parameters: {}
+I, [2019-10-23T00:12:39.388277 #6337]  INFO -- : Response: 200 [text/html] tests/new.html.erb
+I, [2019-10-23T00:12:44.068599 #6337]  INFO -- : Request: GET /tests?
+I, [2019-10-23T00:12:44.100781 #6337]  INFO -- : Handler: TestsController#index
+I, [2019-10-23T00:12:44.100946 #6337]  INFO -- : Parameters: {}
+I, [2019-10-23T00:12:44.101009 #6337]  INFO -- : Response: 200 [text/html] tests/index.html.erb
+I, [2019-10-23T00:12:47.317156 #6337]  INFO -- : Request: GET /tests/2?
+I, [2019-10-23T00:12:47.318705 #6337]  INFO -- : Handler: TestsController#show
+I, [2019-10-23T00:12:47.318897 #6337]  INFO -- : Parameters: {":id"=>"2"}
+I, [2019-10-23T00:12:47.318962 #6337]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-23T00:19:54.810520 #6891]  INFO -- : Request: GET /tests/2?
+I, [2019-10-23T00:19:54.818843 #6891]  INFO -- : Handler: TestsController#show
+I, [2019-10-23T00:19:54.819016 #6891]  INFO -- : Parameters: {":id"=>"2"}
+I, [2019-10-23T00:19:54.819077 #6891]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-23T00:20:00.303762 #6891]  INFO -- : Request: GET /tests/3?
+I, [2019-10-23T00:20:00.308015 #6891]  INFO -- : Handler: TestsController#show
+I, [2019-10-23T00:20:00.308201 #6891]  INFO -- : Parameters: {":id"=>"3"}
+I, [2019-10-23T00:20:00.308267 #6891]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-23T00:35:06.241729 #7299]  INFO -- : Request: GET /tests/3?
+I, [2019-10-23T00:35:06.268635 #7299]  INFO -- : Handler: TestsController#show
+I, [2019-10-23T00:35:06.268799 #7299]  INFO -- : Parameters: {":id"=>"3"}
+I, [2019-10-23T00:35:06.270581 #7299]  INFO -- : Response: 404 [text/html] tests/show.html.erb
+I, [2019-10-23T00:35:12.022171 #7299]  INFO -- : Request: GET /tests/new?
+I, [2019-10-23T00:35:12.025858 #7299]  INFO -- : Handler: TestsController#new
+I, [2019-10-23T00:35:12.026053 #7299]  INFO -- : Parameters: {}
+I, [2019-10-23T00:35:12.026123 #7299]  INFO -- : Response: 200 [text/html] tests/new.html.erb
+I, [2019-10-23T00:35:19.774992 #7299]  INFO -- : Request: GET /tests?
+I, [2019-10-23T00:35:19.776639 #7299]  INFO -- : Handler: TestsController#index
+I, [2019-10-23T00:35:19.776804 #7299]  INFO -- : Parameters: {}
+I, [2019-10-23T00:35:19.776880 #7299]  INFO -- : Response: 200 [text/html] tests/index.html.erb
+I, [2019-10-23T00:35:23.907165 #7299]  INFO -- : Request: GET /teeds?
+I, [2019-10-23T00:35:23.908351 #7299]  INFO -- : Handler: Simpler::Controller#no_page
+I, [2019-10-23T00:35:23.908549 #7299]  INFO -- : Parameters: {}
+I, [2019-10-23T00:35:23.908646 #7299]  INFO -- : Response: 404 [text/html] simpler::/no_page.html.erb
+I, [2019-10-23T09:32:06.035393 #3632]  INFO -- : Request: GET /tests?
+I, [2019-10-23T09:32:06.128153 #3632]  INFO -- : Handler: TestsController#index
+I, [2019-10-23T09:32:06.128316 #3632]  INFO -- : Parameters: {}
+I, [2019-10-23T09:32:06.128380 #3632]  INFO -- : Response: 200 [text/html] tests/index.html.erb
+I, [2019-10-23T09:43:27.807960 #4355]  INFO -- : Request: GET /tests?
+I, [2019-10-23T09:43:29.214574 #4355]  INFO -- : Request: GET /favicon.ico?
+I, [2019-10-23T09:44:05.402945 #4485]  INFO -- : Request: GET /tests?
+I, [2019-10-23T09:44:05.660495 #4485]  INFO -- : Request: GET /favicon.ico?
+I, [2019-10-23T09:44:32.233414 #4533]  INFO -- : Request: GET /tests?
+I, [2019-10-23T09:44:32.243138 #4533]  INFO -- : Handler: TestsController#index
+I, [2019-10-23T09:44:32.245184 #4533]  INFO -- : Parameters: {}
+I, [2019-10-23T09:44:32.245319 #4533]  INFO -- : Response: 200 [text/html] tests/index.html.erb
+I, [2019-10-23T09:44:32.373907 #4533]  INFO -- : Request: GET /favicon.ico?
+I, [2019-10-23T09:44:42.032699 #4533]  INFO -- : Request: GET /tests/1?
+I, [2019-10-23T09:44:42.046695 #4533]  INFO -- : Handler: TestsController#show
+I, [2019-10-23T09:44:42.046906 #4533]  INFO -- : Parameters: {}
+I, [2019-10-23T09:44:42.046984 #4533]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-23T09:44:43.010766 #4533]  INFO -- : Request: GET /favicon.ico?
+I, [2019-10-23T09:45:56.022499 #4648]  INFO -- : Request: GET /tests/1?
+I, [2019-10-23T09:45:56.263990 #4648]  INFO -- : Request: GET /favicon.ico?
+I, [2019-10-23T09:47:45.591667 #4731]  INFO -- : Request: GET /tests/1?
+I, [2019-10-23T09:47:45.603126 #4731]  INFO -- : Handler: TestsController#show
+I, [2019-10-23T09:47:45.603370 #4731]  INFO -- : Parameters: {}
+I, [2019-10-23T09:47:45.603437 #4731]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-23T09:47:45.682311 #4731]  INFO -- : Request: GET /favicon.ico?
+I, [2019-10-23T09:48:47.068328 #4791]  INFO -- : Request: GET /tests/1?
+I, [2019-10-23T09:48:47.077616 #4791]  INFO -- : Handler: TestsController#show
+I, [2019-10-23T09:48:47.077796 #4791]  INFO -- : Parameters: {":id"=>"1"}
+I, [2019-10-23T09:48:47.077864 #4791]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-23T09:48:47.147900 #4791]  INFO -- : Request: GET /favicon.ico?
+I, [2019-10-23T09:51:35.975847 #4910]  INFO -- : Request: GET /tests/1?
+I, [2019-10-23T09:51:35.985013 #4910]  INFO -- : Handler: TestsController#show
+I, [2019-10-23T09:51:35.985229 #4910]  INFO -- : Parameters: {}
+I, [2019-10-23T09:51:35.985291 #4910]  INFO -- : Response: 200 [text/html] tests/show.html.erb
+I, [2019-10-23T09:51:36.058289 #4910]  INFO -- : Request: GET /favicon.ico?
